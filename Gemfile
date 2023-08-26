@@ -28,6 +28,7 @@ gem "image_processing", ">= 1.2"
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "pry"
+  gem 'pry-rails'
 end
 
 group :development do

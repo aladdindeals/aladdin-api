@@ -96,6 +96,7 @@
     <orderEntry type="library" scope="PROVIDED" name="pmap (v1.1.1, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="poltergeist (v1.18.1, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.14.2, rbenv: 3.1.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry-rails (v0.3.9, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v5.0.1, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v5.6.5, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="racc (v1.6.2, rbenv: 3.1.4) [gem]" level="application" />

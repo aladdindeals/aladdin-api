@@ -1,0 +1,53 @@
+---
+- name: Product Name
+  type: string
+  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[1]/h1/span
+  database_field: name
+- name: Average Rating in Star
+  type: float
+  xpath: //*[@id="productRating_LSTMOBGHWFHQFSQYBFU9AP8AR_MOBGHWFHQFSQYBFU_"]/div
+  pattern: "/d+$/"
+  database_field: avg_rating
+- name: Ratings
+  type: float
+  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[2]/div/div/span[2]/span/span[1]
+  pattern: "/(d+(?:,d+)?) *(w+)/"
+  pattern_key: ratings
+  database_field: total_ratings
+  regex_convert_to: hash
+  ruby_regex_method: scan
+- name: Reviews
+  type: float
+  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[2]/div/div/span[2]/span/span[3]
+  pattern: "/(d+(?:,d+)?) *(w+)/"
+  pattern_key: reviews
+  database_field: total_reviews
+  regex_convert_to: hash
+  ruby_regex_method: scan
+- name: Current Price
+  type: float
+  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[1]
+  pattern: "/d+$/"
+  database_field: price
+- name: MRP
+  type: float
+  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[2]
+  pattern: "/d+$/"
+  database_field: maximum_retail_price
+- name: Offer %
+  type: float
+  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[3]/span
+  pattern: "/(d+(?:.d+)?)/"
+  database_field: offer_percentage
+- name: Description
+  type: string
+  xpath: "/html/head/title"
+  database_field: description
+- name: Images
+  type: image
+  xpath: //*[@id="container"]/div/div[3]/div[1]/div[1]/div[1]/div/div[1]/div[2]/div[1]/div[2]/img
+  attachment: true
+  database_field: images
+- name: Product ID
+  from_url: true
+  database_field: pid
