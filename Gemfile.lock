@@ -103,6 +103,8 @@ GEM
       warden (~> 1.2.3)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    down (5.4.1)
+      addressable (~> 2.8)
     erubi (1.12.0)
     ffi (1.15.5)
     globalid (1.1.0)
@@ -235,6 +237,8 @@ GEM
     rake (13.0.6)
     rbcat (0.2.2)
     redis (4.6.0)
+    redis-client (0.16.0)
+      connection_pool
     regexp_parser (2.7.0)
     reline (0.3.2)
       io-console (~> 0.5)
@@ -250,6 +254,11 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sidekiq (7.1.2)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.14.0)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -258,6 +267,8 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.1)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.30-arm64-darwin)
       railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.2)
@@ -303,6 +314,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  down
   image_processing (>= 1.2)
   importmap-rails
   jbuilder
@@ -315,8 +327,10 @@ DEPENDENCIES
   rails (~> 7.0.4, >= 7.0.4.2)
   redis (~> 4.0)
   selenium-webdriver
+  sidekiq (~> 7.1)
   sprockets-rails
   stimulus-rails
+  tailwindcss-rails (~> 2.0)
   turbo-rails
   tzinfo-data
   web-console

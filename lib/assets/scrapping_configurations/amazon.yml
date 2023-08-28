@@ -6,7 +6,7 @@
 - name: Average Rating in Star
   type: float
   xpath: //*[@id="productRating_LSTMOBGHWFHQFSQYBFU9AP8AR_MOBGHWFHQFSQYBFU_"]/div
-  pattern: "/d+$/"
+  pattern: "/\d+$/"
   database_field: avg_rating
 - name: Ratings
   type: float
@@ -25,12 +25,12 @@
 - name: Current Price
   type: float
   xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[1]
-  pattern: "/d+$/"
+  pattern: "/\d+$/"
   database_field: price
 - name: MRP
   type: float
   xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[2]
-  pattern: "/d+$/"
+  pattern: "/\d+$/"
   database_field: maximum_retail_price
 - name: Offer %
   type: float

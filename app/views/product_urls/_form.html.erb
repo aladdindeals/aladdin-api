@@ -1,0 +1,18 @@
+<!-- This is an example component -->
+<%= form_with model: @product_url, class: 'flex items-center w-full' do |f| %>
+  <div class="mx-auto w-full">
+    <div class="flex items-center justify-center w-full  h-screen bg-red-100">
+      <div class="bg-white rounded-2xl border shadow-x1 p-10 max-w-lg">
+        <div class="flex flex-col items-center space-y-4">
+          <h1 class="font-bold text-2xl text-gray-700 w-4/6 text-center">Product URL</h1>
+          <p class="text-sm text-gray-500 text-center w-5/6">
+            Hello, please enter your product URLs you want to be parsed
+          </p>
+          <%= f.text_field :url, class: 'border-2 rounded-lg w-full h-12 px-4', placeholder: 'Enter URL' %>
+          <%= f.select :partner_id, options_for_select(Partner.all.pluck(:name, :id), nil), { prompt: 'Select Partner' }, { class: 'border-2 rounded-lg w-full h-12 px-4' } %>
+          <%= f.submit 'Fetch', class: "bg-red-400 text-white rounded-md hover:bg-red-500 font-semibold px-4 py-3 w-full" %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

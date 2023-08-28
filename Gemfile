@@ -18,6 +18,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "pg_ltree"
 gem "image_processing", ">= 1.2"
+gem "tailwindcss-rails", "~> 2.0"
+gem "sidekiq", "~> 7.1"
+gem "down"
 
 # Use Sass to process CSS
 # gem "sassc-rails"

@@ -1,5 +1,10 @@
 class Scrapper::DataItem
   attr_accessor :raw_data, :configuration
+  REGEX_METHODS = {
+    "amount":       [/(\d+(?:,\d+)*(?:\.\d+)?)/],
+    "whole_number": [/\d+$/],
+    "percentage":   [/(\d+(?:\.\d+)?)/]
+  }
 
   def initialize(raw_data, configuration)
     @raw_data      = raw_data
@@ -28,18 +33,11 @@ class Scrapper::DataItem
   private
 
   def convert_using_pattern
-    return raw_data if configuration.pattern.blank?
-    binding.pry if configuration.database_field == 'price'
-    if configuration.pattern_key.present? && configuration.ruby_regex_method.present?
-      convert_to = configuration.regex_convert_to.present? ? configuration.regex_convert_to : 'to_s'
-      data       = raw_data
-                     .send(configuration.ruby_regex_method, configuration.pattern)
-                     .send(convert_to)
-      return data unless convert_to == 'hash'
-      data&.transform_keys { |k| k.downcase }&.dig(configuration.pattern_key.to_s)
-    else
-      raw_data.match(configuration.pattern).to_s
-    end
+    regex_patterns = REGEX_METHODS[configuration.pattern_method&.to_sym]
+    return raw_data if regex_patterns.blank?
+    regex_patterns.map do |regex|
+      raw_data.match(regex).to_s
+    end.compact_blank.first
   end
 
   def remove_spaces!
