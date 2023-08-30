@@ -9,6 +9,7 @@ class Scrapper::Images
 
   def download
     return if @urls.blank?
+    Current.product_url.product_images.destroy_all
     @urls.each_with_index do |url, index|
       file_name = "#{url.split('/').last.truncate(28)}_#{index}.jpeg"
       @temp_file = Down.download(

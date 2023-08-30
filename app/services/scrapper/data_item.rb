@@ -25,6 +25,8 @@ class Scrapper::DataItem
       rescue
         data
       end
+    when 'array'
+      [data].flatten
     else
       data.to_s
     end
@@ -33,6 +35,7 @@ class Scrapper::DataItem
   private
 
   def convert_using_pattern
+    return raw_data.scan(Regexp.new(configuration.pattern))&.flatten&.join('').to_s if configuration.pattern.present?
     regex_patterns = REGEX_METHODS[configuration.pattern_method&.to_sym]
     return raw_data if regex_patterns.blank?
     regex_patterns.map do |regex|

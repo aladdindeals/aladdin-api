@@ -1,51 +1,69 @@
 ---
 - name: Product Name
   type: string
-  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[1]/h1/span
-  database_field: name
+  xpath: "//*[@id=\"productTitle\"]"
+  database_field: "name"
 - name: Average Rating in Star
   type: float
-  xpath: //*[@id="productRating_LSTMOBGHWFHQFSQYBFU9AP8AR_MOBGHWFHQFSQYBFU_"]/div
-  pattern: "/\d+$/"
-  database_field: avg_rating
+  xpath: "//*[@id=\"acrPopover\"]"
+  pattern_method: amount
+  database_field: "avg_rating"
 - name: Ratings
   type: float
-  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[2]/div/div/span[2]/span/span[1]
-  pattern: "/(d+(?:,d+)?) *(w+)/"
-  pattern_key: ratings
-  database_field: total_ratings
-  ruby_regex_method: scan
-- name: Reviews
-  type: float
-  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[2]/div/div/span[2]/span/span[3]
-  pattern: "/(d+(?:,d+)?)*(w+)/"
-  pattern_key: reviews
-  database_field: total_reviews
-  ruby_regex_method: scan
+  xpath: "//*[@id=\"acrCustomerReviewText\"]"
+  pattern_method: amount
+  database_field: "total_ratings"
 - name: Current Price
   type: float
-  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[1]
-  pattern: "/\d+$/"
-  database_field: price
+  xpath: "//*[@class=\"a-price-whole\"]"
+  pattern_method: amount
+  database_field: "price"
 - name: MRP
   type: float
-  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[2]
-  pattern: "/\d+$/"
-  database_field: maximum_retail_price
+  xpath: "//*[@class=\"a-price a-text-price\"]//*[@class=\"a-offscreen\"]"
+  pattern_method: amount
+  database_field: "maximum_retail_price"
 - name: Offer %
   type: float
-  xpath: //*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[4]/div[1]/div/div[3]/span
-  pattern: "/(d+(?:.d+)?)/"
-  database_field: offer_percentage
-- name: Description
+  xpath: "//*[@class=\"savingsPercentage\"]"
+  pattern_method: percentage
+  database_field: "offer_percentage"
+- name: Title
   type: string
-  xpath: "/html/head/title"
-  database_field: description
+  xpath: "/html/body/div[2]/title"
+  database_field: "meta_title"
+- name: "Meta Keywords"
+  type: string
+  xpath: '/html/head/meta[@name="Keywords"]'
+  database_field: "meta_keywords"
+  attribute: content
+- name: "Meta Description"
+  type: string
+  xpath: "/html/body/div[2]/meta[2]"
+  database_field: "meta_description"
+  attribute: content
 - name: Images
   type: image
-  xpath: //*[@id="container"]/div/div[3]/div[1]/div[1]/div[1]/div/div[1]/div[2]/div[1]/div[2]/img
+  xpath: "//*[@class=\"a-dynamic-image\"]"
   attachment: true
-  database_field: images
+  database_field: "images"
 - name: Product ID
   from_url: true
-  database_field: pid
+  database_field: "pid"
+- name: Category Breadcrumb
+  type: string
+  xpath: "//*[@class=\"_1MR4o5\"]"
+  database_field: "breadcrumb"
+- name: Technical Details
+  type: string
+  xpath: "//*[@class=\"productDetails_techSpec_section_1\"]"
+  database_field: "technical_details"
+- name: Description
+  type: string
+  xpath: "//*[@id=\"feature-bullets\"]"
+  database_field: "description"
+- name: Additional Information
+  type: string
+  xpath: "//*[@class=\"productDetails_detailBullets_sections1\"]"
+  database_field: "additional_information"
+  table: true

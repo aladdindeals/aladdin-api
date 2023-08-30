@@ -19,7 +19,7 @@
         <% if @product_url.parsed_data.present? %>
           <% @product_url.parsed_data.each do |key, value| %>
             <p class="font-md text-slate-500">
-              <b><%= key.humanize %></b>&nbsp;:&nbsp;<%= value %></p>
+              <b><%= key.humanize %></b>&nbsp;:&nbsp;<%= value.is_a?(Array) ? value.join(' > ') : value  %></p>
           <% end %>
           <% if @product_url.product_images.attached? %>
             <% @product_url.product_images.each_with_index do |product_image, index| %>

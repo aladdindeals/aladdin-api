@@ -17,11 +17,34 @@ class Scrapper < Kimurai::Base
         parsed_html_nodes = if item['database_field'] == 'images'
                               response.xpath(item['xpath'])
                             else
-                              response.xpath(item['xpath']).text.squish
+                              response_items = response.xpath(item['xpath']).map do |child|
+                                if item['attribute'].present?
+                                  begin
+                                    child[item['attribute']]
+                                  rescue
+                                    child.text.squish
+                                  end
+                                else
+                                  child.text.squish
+                                end
+                              end
+                              if item['type'] == 'array'
+                                response_items
+                              else
+                                response_items.join(' ')
+                              end
+
                             end
         next if parsed_html_nodes.blank?
         if item['database_field'] == 'images'
-          image_urls = parsed_html_nodes.map { |itm| itm['src'] }.compact_blank
+          image_urls = parsed_html_nodes.map do |itm|
+            if itm.try(:children).present?
+              itm.try(:children).map { |child| child['src'] }.compact_blank
+            else
+              itm['src']
+            end
+
+          end.compact_blank.flatten
           Scrapper::Images.new(image_urls).download
           next
         else
