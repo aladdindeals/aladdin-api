@@ -58,12 +58,3 @@
 #     setting.save
 #   end
 # end
-
-[
-  {
-    url:     "https://www.flipkart.com/realme-11-pro-5g-oasis-green-256-gb/p/itm5647cce338e55?pid=MOBGPU8H9KVVVHMS&lid=LSTMOBGPU8H9KVVVHMSM5WQKX&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_1&otracker=clp_metro_expandable_1_5.metroExpandable.METRO_EXPANDABLE_Realme_mobile-phones-store_Q1PDG4YW86MF_wp3&fm=neo%2Fmerchandising&iid=e7225c2c-4f09-4de9-8984-b8845ed0e495.MOBGPU8H9KVVVHMS.SEARCH&ppt=clp&ppn=mobile-phones-store&ssid=vamdnjyb1s0000001692807164780",
-    partner: 'Amazon'
-  }
-].each do |product_url|
-  ProductUrl.create(url: product_url[:url], partner: Partner.find_by(name: product_url[:partner]))
-end
