@@ -2,7 +2,7 @@ class Category < ApplicationRecord
   belongs_to :partner, inverse_of: :categories
   has_many :products, inverse_of: :categories
   validates_presence_of :source_name, :name
-  before_save :set_source_name, on: :create
+  # before_save :set_source_name, on: :create
   
   ltree :parent_path
 

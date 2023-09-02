@@ -52,7 +52,7 @@
   database_field: "pid"
 - name: Category Breadcrumb
   type: string
-  xpath: "//*[@class=\"_1MR4o5\"]"
+  xpath: "//*[@id=\"wayfinding-breadcrumbs_feature_div\"]"
   database_field: "breadcrumb"
 - name: Technical Details
   type: string
