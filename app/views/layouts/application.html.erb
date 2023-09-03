@@ -12,8 +12,7 @@
 </head>
 
 <body>
-<main class="container mx-auto mt-28 px-5 flex">
-
+<main class="<%= yield(:main_class) || 'container mx-auto mt-28 px-5 flex' %>">
   <% if flash.present? %>
     <% flash.each do |status, message| %>
       <div class="max-w-lg mx-auto">
