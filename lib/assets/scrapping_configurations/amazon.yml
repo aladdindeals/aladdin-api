@@ -50,6 +50,7 @@
 - name: Product ID
   from_url: true
   database_field: "pid"
+  url_pattern: /dp\/(.*?)\//
 - name: Category Breadcrumb
   type: string
   xpath: "//*[@id=\"wayfinding-breadcrumbs_feature_div\"]"

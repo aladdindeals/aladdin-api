@@ -8,6 +8,8 @@ class User < ApplicationRecord
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }, if: Proc.new { |usr| usr.email.present? }
   include BCrypt
 
+  has_many :product_urls, inverse_of: :creator, foreign_key: :creator_id
+
   def grant_access
     pw            = SecureRandom.urlsafe_base64
     self.password = pw

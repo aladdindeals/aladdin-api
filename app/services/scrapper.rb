@@ -1,4 +1,5 @@
 require 'kimurai'
+require 'uri'
 
 class Scrapper < Kimurai::Base
   @name   = "infinite_scroll_spider"
@@ -16,6 +17,13 @@ class Scrapper < Kimurai::Base
         next if item['database_field'].blank?
         parsed_html_nodes = if item['database_field'] == 'images'
                               response.xpath(item['xpath'])
+                            elsif item['from_url'].present?
+                              if item['url_pattern'].present?
+                                options[:url].to_s.scan(Regexp.new(item['url_pattern']))&.flatten&.join('').to_s
+                              else
+                                query_params = extract_query_params(options[:url].to_s)
+                                query_params.dig(item['query_parameter']).to_s
+                              end
                             else
                               response_items = response.xpath(item['xpath']).map do |child|
                                 if item['attribute'].present?
@@ -58,5 +66,11 @@ class Scrapper < Kimurai::Base
     else
       raise "Partner configuration is not found, Please configure !"
     end
+  end
+
+  def extract_query_params(url_string)
+    uri          = URI.parse(url_string)
+    query_params = URI.decode_www_form(uri.query).to_h
+    return query_params
   end
 end

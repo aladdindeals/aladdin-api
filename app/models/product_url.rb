@@ -1,5 +1,6 @@
 class ProductUrl < ApplicationRecord
   belongs_to :partner
+  belongs_to :creator, class_name: 'User', foreign_key: :creator_id, inverse_of: :product_urls
   validates :url, presence: true
   enum :scraping_status, [:pending, :processing, :success, :failed]
   enum :url_source, [:manual, :telegram], _prefix: true

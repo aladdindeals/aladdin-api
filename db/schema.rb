@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_27_171724) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_04_165547) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
   enable_extension "pgcrypto"
@@ -88,6 +88,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_27_171724) do
     t.uuid "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.jsonb "source_data", default: {}
     t.index ["product_id"], name: "index_product_url_mappings_on_product_id"
     t.index ["product_url_id"], name: "index_product_url_mappings_on_product_url_id"
   end
@@ -104,6 +105,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_27_171724) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.jsonb "parsed_data", default: {}
+    t.uuid "creator_id"
+    t.index ["creator_id"], name: "index_product_urls_on_creator_id"
     t.index ["partner_id"], name: "index_product_urls_on_partner_id"
   end
 
@@ -151,6 +154,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_27_171724) do
   add_foreign_key "product_url_mappings", "product_urls"
   add_foreign_key "product_url_mappings", "products"
   add_foreign_key "product_urls", "partners"
+  add_foreign_key "product_urls", "users", column: "creator_id"
   add_foreign_key "products", "categories"
   add_foreign_key "products", "partners"
 end

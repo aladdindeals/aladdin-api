@@ -60,6 +60,7 @@
 - name: Product ID
   from_url: true
   database_field: "pid"
+  query_parameter: "pid"
 - name: Category Breadcrumb
   type: string
   xpath: "//*[@class=\"_1MR4o5\"]"
