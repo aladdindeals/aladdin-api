@@ -12,13 +12,13 @@ class Scrapper::Images
     Current.product_url.product_images.destroy_all
     @urls.each_with_index do |url, index|
       file_name = "#{url.split('/').last.truncate(28)}_#{index}.jpeg"
-      @temp_file = Down.download(
-        url,
-        max_redirects: 5,
-        max_size:      5 * 1024 * 1024
-      )
-
       begin
+        @temp_file = Down.download(
+          url,
+          max_redirects: 5,
+          max_size:      5 * 1024 * 1024
+        )
+
         Current.product_url.product_images.attach(io: File.open(@temp_file.path), filename: file_name, content_type: 'image/jpeg')
       rescue
         nil
