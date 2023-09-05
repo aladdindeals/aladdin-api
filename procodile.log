@@ -383,3 +383,394 @@
 [36m15:14:08 worker.1           | [0m[41;37mWarning:[0m[31m this process has been respawned 5 times and keeps dying.[0m
 [36m15:14:08 worker.1           | [0m[31mIt will not be respawned automatically any longer and will no longer be managed.[0m
 [36m15:14:08 worker.1           | [0mRemoved PID file
+[m15:36:24 system             | [0mReloading configuration
+#<Thread:0x000000010456baf8 /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:8 run> terminated with exception (report_on_exception is true):
+/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `initialize': No such file or directory @ rb_sysopen - /Users/krishnabalaji/rails-projects/aladdin-api/Procfile (Errno::ENOENT)
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `open'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `load_file'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:185:in `load_process_list_from_file'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:102:in `process_list'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:46:in `reload'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:152:in `reload_config'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:59:in `start_processes'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_session.rb:35:in `start_processes'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_session.rb:17:in `public_send'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_session.rb:17:in `receive_data'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:25:in `block in listen'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:21:in `loop'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:21:in `listen'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:10:in `block in start'
+[m15:36:24 system             | [0mError: Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/krishnabalaji/rails-projects/aladdin-api/Procfile)
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `initialize')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `open')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `load_file')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:185:in `load_process_list_from_file')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:102:in `process_list')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:46:in `reload')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:152:in `reload_config')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:59:in `start_processes')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_session.rb:35:in `start_processes')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_session.rb:17:in `public_send')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_session.rb:17:in `receive_data')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:25:in `block in listen')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:21:in `loop')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:21:in `listen')
+[m15:36:24 system             | [0m=> /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:10:in `block in start')
+[m15:36:24 system             | [0mReloading configuration
+/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `initialize': No such file or directory @ rb_sysopen - /Users/krishnabalaji/rails-projects/aladdin-api/Procfile (Errno::ENOENT)
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `open'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `load_file'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:185:in `load_process_list_from_file'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:102:in `process_list'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:46:in `reload'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:152:in `reload_config'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:74:in `stop'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:49:in `rescue in start'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:31:in `start'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/cli.rb:526:in `block in start_supervisor'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/cli.rb:521:in `fork'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/cli.rb:521:in `start_supervisor'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/cli.rb:158:in `start'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/cli.rb:40:in `public_send'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/cli.rb:40:in `dispatch'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/bin/procodile:92:in `<top (required)>'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/bin/procodile:25:in `load'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/bin/procodile:25:in `<main>'
+/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `initialize': No such file or directory @ rb_sysopen - /Users/krishnabalaji/rails-projects/aladdin-api/Procfile (Errno::ENOENT)
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `open'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/3.1.0/psych.rb:670:in `load_file'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:185:in `load_process_list_from_file'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:102:in `process_list'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/config.rb:46:in `reload'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:152:in `reload_config'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/supervisor.rb:59:in `start_processes'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_session.rb:35:in `start_processes'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_session.rb:17:in `public_send'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_session.rb:17:in `receive_data'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:25:in `block in listen'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:21:in `loop'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:21:in `listen'
+	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/procodile-1.0.26/lib/procodile/control_server.rb:10:in `block in start'
+[m15:36:57 system             | [0mProcodile supervisor started with PID 50441
+[m15:36:57 system             | [0mApplication root is /Users/krishnabalaji/rails-projects/aladdin-api
+[m15:36:57 system             | [0mReloading configuration
+[m15:36:57 control            | [0mListening at /Users/krishnabalaji/rails-projects/aladdin-api/pids/procodile.sock
+[35m15:36:57 web.1              | [0mStarted with PID 50442
+[31m15:36:57 css.1              | [0mStarted with PID 50445
+[36m15:36:57 worker.1           | [0mStarted with PID 50446
+[32m15:36:57 release.1          | [0mStarted with PID 50447
+[35m15:36:58 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:36:58 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:36:58 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:36:58 web.1              | [0m[35m=> [0mA server is already running. Check /Users/krishnabalaji/rails-projects/aladdin-api/tmp/pids/server.pid.
+[35m15:36:58 web.1              | [0m[35m=> [0mExiting
+[36m15:36:58 worker.1           | [0m[36m=> [0m2023-09-05T10:06:58.793Z pid=50446 tid=165u INFO: Booted Rails 7.0.4.2 application in development environment
+[36m15:36:58 worker.1           | [0m[36m=> [0m2023-09-05T10:06:58.793Z pid=50446 tid=165u INFO: Running in ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [arm64-darwin22]
+[36m15:36:58 worker.1           | [0m[36m=> [0m2023-09-05T10:06:58.793Z pid=50446 tid=165u INFO: See LICENSE and the LGPL-3.0 for licensing details.
+[36m15:36:58 worker.1           | [0m[36m=> [0m2023-09-05T10:06:58.793Z pid=50446 tid=165u INFO: Upgrade to Sidekiq Pro for more features and support: https://sidekiq.org
+[36m15:36:58 worker.1           | [0m[36m=> [0m2023-09-05T10:06:58.793Z pid=50446 tid=165u INFO: Sidekiq 7.1.2 connecting to Redis with options {:size=>10, :pool_name=>"internal", :url=>"redis://127.0.0.1:6379/6"}
+[36m15:36:58 worker.1           | [0m[36m=> [0m2023-09-05T10:06:58.794Z pid=50446 tid=165u INFO: Sidekiq 7.1.2 connecting to Redis with options {:size=>1, :pool_name=>"default", :url=>"redis://127.0.0.1:6379/6"}
+[32m15:36:58 release.1          | [0m[32m=> [0mD, [2023-09-05T15:36:58.799039 #50447] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:36:58 release.1          | [0m[32m=> [0mD, [2023-09-05T15:36:58.811738 #50447] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:36:58 release.1          | [0m[32m=> [0mD, [2023-09-05T15:36:58.817549 #50447] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:36:58 release.1          | [0m[32m=> [0mD, [2023-09-05T15:36:58.820512 #50447] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:36:58 release.1          | [0m[32m=> [0mD, [2023-09-05T15:36:58.830743 #50447] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[31m15:36:59 css.1              | [0m[31m=> [0m
+[31m15:36:59 css.1              | [0m[31m=> [0mRebuilding...
+[31m15:36:59 css.1              | [0m[31m=> [0m
+[31m15:36:59 css.1              | [0m[31m=> [0mDone in 282ms.
+[35m15:37:00 web.1              | [0mProcess has stopped. Respawning...
+[35m15:37:00 web.1              | [0mStarted with PID 50532
+[32m15:37:00 release.1          | [0mProcess has stopped. Respawning...
+[32m15:37:00 release.1          | [0mStarted with PID 50533
+[35m15:37:01 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:37:01 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:37:01 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:37:01 web.1              | [0m[35m=> [0mA server is already running. Check /Users/krishnabalaji/rails-projects/aladdin-api/tmp/pids/server.pid.
+[35m15:37:01 web.1              | [0m[35m=> [0mExiting
+[32m15:37:01 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:01.519634 #50533] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:37:01 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:01.525506 #50533] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:37:01 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:01.528694 #50533] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:37:01 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:01.531184 #50533] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:37:01 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:01.543300 #50533] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[35m15:37:03 web.1              | [0mProcess has stopped. Respawning...
+[35m15:37:03 web.1              | [0mStarted with PID 50571
+[32m15:37:03 release.1          | [0mProcess has stopped. Respawning...
+[32m15:37:03 release.1          | [0mStarted with PID 50572
+[35m15:37:04 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:37:04 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:37:04 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:37:04 web.1              | [0m[35m=> [0mA server is already running. Check /Users/krishnabalaji/rails-projects/aladdin-api/tmp/pids/server.pid.
+[35m15:37:04 web.1              | [0m[35m=> [0mExiting
+[32m15:37:04 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:04.497783 #50572] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:37:04 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:04.503654 #50572] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:37:04 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:04.506550 #50572] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:37:04 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:04.509410 #50572] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:37:04 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:04.519421 #50572] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[35m15:37:06 web.1              | [0mProcess has stopped. Respawning...
+[35m15:37:06 web.1              | [0mStarted with PID 50637
+[32m15:37:06 release.1          | [0mProcess has stopped. Respawning...
+[32m15:37:06 release.1          | [0mStarted with PID 50638
+[35m15:37:07 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:37:07 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:37:07 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:37:07 web.1              | [0m[35m=> [0mA server is already running. Check /Users/krishnabalaji/rails-projects/aladdin-api/tmp/pids/server.pid.
+[35m15:37:07 web.1              | [0m[35m=> [0mExiting
+[32m15:37:07 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:07.543829 #50638] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:37:07 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:07.550087 #50638] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:37:07 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:07.553621 #50638] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:37:07 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:07.556420 #50638] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:37:07 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:07.571575 #50638] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[35m15:37:09 web.1              | [0mProcess has stopped. Respawning...
+[35m15:37:09 web.1              | [0mStarted with PID 50677
+[32m15:37:09 release.1          | [0mProcess has stopped. Respawning...
+[32m15:37:09 release.1          | [0mStarted with PID 50678
+[35m15:37:10 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:37:10 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:37:10 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:37:10 web.1              | [0m[35m=> [0mA server is already running. Check /Users/krishnabalaji/rails-projects/aladdin-api/tmp/pids/server.pid.
+[35m15:37:10 web.1              | [0m[35m=> [0mExiting
+[32m15:37:10 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:10.544613 #50678] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:37:10 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:10.550979 #50678] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:37:10 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:10.554237 #50678] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:37:10 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:10.557115 #50678] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:37:10 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:10.569253 #50678] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[35m15:37:12 web.1              | [0mProcess has stopped. Respawning...
+[35m15:37:12 web.1              | [0mStarted with PID 50716
+[32m15:37:12 release.1          | [0mProcess has stopped. Respawning...
+[32m15:37:12 release.1          | [0mStarted with PID 50717
+[35m15:37:13 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:37:13 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:37:13 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:37:13 web.1              | [0m[35m=> [0mA server is already running. Check /Users/krishnabalaji/rails-projects/aladdin-api/tmp/pids/server.pid.
+[35m15:37:13 web.1              | [0m[35m=> [0mExiting
+[32m15:37:13 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:13.534816 #50717] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:37:13 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:13.539800 #50717] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:37:13 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:13.542348 #50717] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:37:13 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:13.544823 #50717] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:37:13 release.1          | [0m[32m=> [0mD, [2023-09-05T15:37:13.555878 #50717] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[35m15:37:15 web.1              | [0m[41;37mWarning:[0m[31m this process has been respawned 5 times and keeps dying.[0m
+[35m15:37:15 web.1              | [0m[31mIt will not be respawned automatically any longer and will no longer be managed.[0m
+[35m15:37:15 web.1              | [0mRemoved PID file
+[32m15:37:15 release.1          | [0m[41;37mWarning:[0m[31m this process has been respawned 5 times and keeps dying.[0m
+[32m15:37:15 release.1          | [0m[31mIt will not be respawned automatically any longer and will no longer be managed.[0m
+[32m15:37:15 release.1          | [0mRemoved PID file
+[m15:38:52 system             | [0mReloading configuration
+[m15:38:52 system             | [0mStopping all Procodile processes
+[35m15:38:52 web.1              | [0mProcess already stopped
+[31m15:38:52 css.1              | [0mSending TERM to 50445
+[36m15:38:52 worker.1           | [0mSending TERM to 50446
+[32m15:38:52 release.1          | [0mProcess already stopped
+[36m15:38:52 worker.1           | [0m[36m=> [0m2023-09-05T10:08:52.634Z pid=50446 tid=165u INFO: Shutting down
+[36m15:38:52 worker.1           | [0m[36m=> [0m2023-09-05T10:08:52.635Z pid=50446 tid=165u INFO: Terminating quiet threads for default capsule
+[36m15:38:52 worker.1           | [0m[36m=> [0m2023-09-05T10:08:52.636Z pid=50446 tid=qoy INFO: Scheduler exiting...
+[36m15:38:53 worker.1           | [0m[36m=> [0m2023-09-05T10:08:53.141Z pid=50446 tid=qqi INFO: Pausing to allow jobs to finish...
+[36m15:38:54 worker.1           | [0m[36m=> [0m2023-09-05T10:08:54.152Z pid=50446 tid=165u INFO: Bye!
+[35m15:38:54 web.1              | [0mRemoved PID file
+[36m15:38:54 worker.1           | [0mRemoved PID file
+[32m15:38:54 release.1          | [0mRemoved PID file
+[m15:38:57 system             | [0mReloading configuration
+[35m15:38:57 web.2              | [0mStarted with PID 51047
+[36m15:38:57 worker.2           | [0mStarted with PID 51048
+[32m15:38:57 release.2          | [0mStarted with PID 51049
+[35m15:38:58 web.2              | [0m[35m=> [0m=> Booting Puma
+[35m15:38:58 web.2              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:38:58 web.2              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:38:58 web.2              | [0m[35m=> [0mPuma starting in single mode...
+[35m15:38:58 web.2              | [0m[35m=> [0m* Puma version: 5.6.5 (ruby 3.1.4-p223) ("Birdie's Version")
+[35m15:38:58 web.2              | [0m[35m=> [0m*  Min threads: 5
+[35m15:38:58 web.2              | [0m[35m=> [0m*  Max threads: 5
+[35m15:38:58 web.2              | [0m[35m=> [0m*  Environment: development
+[35m15:38:58 web.2              | [0m[35m=> [0m*          PID: 51047
+[35m15:38:58 web.2              | [0m[35m=> [0m* Listening on http://127.0.0.1:8080
+[35m15:38:58 web.2              | [0m[35m=> [0m* Listening on http://[::1]:8080
+[35m15:38:58 web.2              | [0m[35m=> [0mUse Ctrl-C to stop
+[32m15:38:58 release.2          | [0m[32m=> [0mD, [2023-09-05T15:38:58.639480 #51049] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[36m15:38:58 worker.2           | [0m[36m=> [0m2023-09-05T10:08:58.642Z pid=51048 tid=16hg INFO: Booted Rails 7.0.4.2 application in development environment
+[36m15:38:58 worker.2           | [0m[36m=> [0m2023-09-05T10:08:58.642Z pid=51048 tid=16hg INFO: Running in ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [arm64-darwin22]
+[36m15:38:58 worker.2           | [0m[36m=> [0m2023-09-05T10:08:58.642Z pid=51048 tid=16hg INFO: See LICENSE and the LGPL-3.0 for licensing details.
+[36m15:38:58 worker.2           | [0m[36m=> [0m2023-09-05T10:08:58.642Z pid=51048 tid=16hg INFO: Upgrade to Sidekiq Pro for more features and support: https://sidekiq.org
+[36m15:38:58 worker.2           | [0m[36m=> [0m2023-09-05T10:08:58.642Z pid=51048 tid=16hg INFO: Sidekiq 7.1.2 connecting to Redis with options {:size=>10, :pool_name=>"internal", :url=>"redis://127.0.0.1:6379/6"}
+[36m15:38:58 worker.2           | [0m[36m=> [0m2023-09-05T10:08:58.643Z pid=51048 tid=16hg INFO: Sidekiq 7.1.2 connecting to Redis with options {:size=>1, :pool_name=>"default", :url=>"redis://127.0.0.1:6379/6"}
+[32m15:38:58 release.2          | [0m[32m=> [0mD, [2023-09-05T15:38:58.645984 #51049] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:38:58 release.2          | [0m[32m=> [0mD, [2023-09-05T15:38:58.649086 #51049] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:38:58 release.2          | [0m[32m=> [0mD, [2023-09-05T15:38:58.651628 #51049] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:38:58 release.2          | [0m[32m=> [0mD, [2023-09-05T15:38:58.664595 #51049] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:00 release.2          | [0mProcess has stopped. Respawning...
+[32m15:39:00 release.2          | [0mStarted with PID 51135
+[32m15:39:01 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:01.505816 #51135] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:39:01 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:01.510816 #51135] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:01 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:01.513370 #51135] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:39:01 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:01.515695 #51135] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:39:01 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:01.526323 #51135] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:03 release.2          | [0mProcess has stopped. Respawning...
+[32m15:39:03 release.2          | [0mStarted with PID 51157
+[32m15:39:04 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:04.561665 #51157] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:39:04 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:04.567472 #51157] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:04 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:04.570716 #51157] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:39:04 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:04.573362 #51157] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:39:04 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:04.587878 #51157] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:06 release.2          | [0mProcess has stopped. Respawning...
+[32m15:39:06 release.2          | [0mStarted with PID 51179
+[32m15:39:07 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:07.555472 #51179] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:39:07 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:07.560981 #51179] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:07 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:07.564522 #51179] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:39:07 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:07.567357 #51179] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:39:07 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:07.579526 #51179] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:09 release.2          | [0mProcess has stopped. Respawning...
+[32m15:39:09 release.2          | [0mStarted with PID 51202
+[32m15:39:10 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:10.573811 #51202] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:39:10 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:10.594462 #51202] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:10 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:10.598082 #51202] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:39:10 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:10.600884 #51202] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:39:10 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:10.612314 #51202] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:12 release.2          | [0mProcess has stopped. Respawning...
+[32m15:39:12 release.2          | [0mStarted with PID 51225
+[32m15:39:13 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:13.551810 #51225] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2238499316215733445)[0m
+[32m15:39:13 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:13.556879 #51225] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:13 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:13.559713 #51225] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+[32m15:39:13 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:13.562498 #51225] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2238499316215733445)[0m
+[32m15:39:13 release.2          | [0m[32m=> [0mD, [2023-09-05T15:39:13.575523 #51225] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[32m15:39:15 release.2          | [0m[41;37mWarning:[0m[31m this process has been respawned 5 times and keeps dying.[0m
+[32m15:39:15 release.2          | [0m[31mIt will not be respawned automatically any longer and will no longer be managed.[0m
+[32m15:39:15 release.2          | [0mRemoved PID file
+[35m15:39:22 web.2              | [0m[35m=> [0mStarted GET "/" for 127.0.0.1 at 2023-09-05 15:39:22 +0530
+[35m15:39:22 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:22.442714 #51047] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[35m15:39:22 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:22.458174 #51047] DEBUG -- :   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", "5c28841d-6fc9-4cd8-bb6f-1709bf1d7a77"], ["LIMIT", 1]]
+[35m15:39:22 web.2              | [0m[35m=> [0mProcessing by ProductUrlsController#index as HTML
+[35m15:39:22 web.2              | [0m[35m=> [0m  Rendering layout layouts/application.html.erb
+[35m15:39:22 web.2              | [0m[35m=> [0m  Rendering product_urls/index.html.erb within layouts/application
+[35m15:39:22 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:22.486990 #51047] DEBUG -- :   [1m[36mProductUrl Load (0.9ms)[0m  [1m[34mSELECT "product_urls".* FROM "product_urls" WHERE "product_urls"."creator_id" = $1 ORDER BY "product_urls"."created_at" DESC[0m  [["creator_id", "5c28841d-6fc9-4cd8-bb6f-1709bf1d7a77"]]
+[35m15:39:22 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:22.487258 #51047] DEBUG -- :   ↳ app/views/product_urls/index.html.erb:56
+[35m15:39:22 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:22.505900 #51047] DEBUG -- :   [1m[36mPartner Load (2.1ms)[0m  [1m[34mSELECT "partners".* FROM "partners" WHERE "partners"."id" IN ($1, $2)[0m  [["id", "f3960285-0591-475b-a9a7-33f35249ebae"], ["id", "1b61180c-51ec-406f-b0f4-3f1ac472cfe3"]]
+[35m15:39:22 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:22.506227 #51047] DEBUG -- :   ↳ app/views/product_urls/index.html.erb:56
+[35m15:39:22 web.2              | [0m[35m=> [0m  Rendered collection of product_urls/_product_url.html.erb [7 times] (Duration: 15.6ms | Allocations: 8878)
+[35m15:39:22 web.2              | [0m[35m=> [0m  Rendered product_urls/index.html.erb within layouts/application (Duration: 24.1ms | Allocations: 17262)
+[35m15:39:22 web.2              | [0m[35m=> [0m  Rendered layout layouts/application.html.erb (Duration: 72.3ms | Allocations: 75758)
+[35m15:39:22 web.2              | [0m[35m=> [0mCompleted 200 OK in 86ms (Views: 64.5ms | ActiveRecord: 10.8ms | Allocations: 85113)
+[35m15:39:22 web.2              | [0m[35m=> [0m
+[35m15:39:22 web.2              | [0m[35m=> [0m
+[35m15:39:23 web.2              | [0m[35m=> [0mStarted GET "/" for 127.0.0.1 at 2023-09-05 15:39:23 +0530
+[35m15:39:23 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:23.697416 #51047] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", "5c28841d-6fc9-4cd8-bb6f-1709bf1d7a77"], ["LIMIT", 1]]
+[35m15:39:23 web.2              | [0m[35m=> [0mProcessing by ProductUrlsController#index as HTML
+[35m15:39:23 web.2              | [0m[35m=> [0m  Rendering layout layouts/application.html.erb
+[35m15:39:23 web.2              | [0m[35m=> [0m  Rendering product_urls/index.html.erb within layouts/application
+[35m15:39:23 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:23.699777 #51047] DEBUG -- :   [1m[36mProductUrl Load (0.4ms)[0m  [1m[34mSELECT "product_urls".* FROM "product_urls" WHERE "product_urls"."creator_id" = $1 ORDER BY "product_urls"."created_at" DESC[0m  [["creator_id", "5c28841d-6fc9-4cd8-bb6f-1709bf1d7a77"]]
+[35m15:39:23 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:23.700070 #51047] DEBUG -- :   ↳ app/views/product_urls/index.html.erb:56
+[35m15:39:23 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:23.700845 #51047] DEBUG -- :   [1m[36mPartner Load (0.2ms)[0m  [1m[34mSELECT "partners".* FROM "partners" WHERE "partners"."id" IN ($1, $2)[0m  [["id", "f3960285-0591-475b-a9a7-33f35249ebae"], ["id", "1b61180c-51ec-406f-b0f4-3f1ac472cfe3"]]
+[35m15:39:23 web.2              | [0m[35m=> [0mD, [2023-09-05T15:39:23.701082 #51047] DEBUG -- :   ↳ app/views/product_urls/index.html.erb:56
+[35m15:39:23 web.2              | [0m[35m=> [0m  Rendered collection of product_urls/_product_url.html.erb [7 times] (Duration: 1.4ms | Allocations: 1906)
+[35m15:39:23 web.2              | [0m[35m=> [0m  Rendered product_urls/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2883)
+[35m15:39:23 web.2              | [0m[35m=> [0m  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 10555)
+[35m15:39:23 web.2              | [0m[35m=> [0mCompleted 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.7ms | Allocations: 11084)
+[35m15:39:23 web.2              | [0m[35m=> [0m
+[35m15:39:23 web.2              | [0m[35m=> [0m
+[35m15:39:28 web.2              | [0m[35m=> [0mStarted GET "/sidekiq" for 127.0.0.1 at 2023-09-05 15:39:28 +0530
+[35m15:39:28 web.2              | [0m[35m=> [0m2023-09-05T10:09:28.838Z pid=51047 tid=qrv INFO: Sidekiq 7.1.2 connecting to Redis with options {:size=>10, :pool_name=>"internal", :url=>"redis://127.0.0.1:6379/6"}
+[35m15:39:28 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/stylesheets/bootstrap.css" for 127.0.0.1 at 2023-09-05 15:39:28 +0530
+[35m15:39:28 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/stylesheets/application-dark.css" for 127.0.0.1 at 2023-09-05 15:39:28 +0530
+[35m15:39:28 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/stylesheets/application.css" for 127.0.0.1 at 2023-09-05 15:39:28 +0530
+[35m15:39:28 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/javascripts/chartjs-plugin-annotation.min.js" for 127.0.0.1 at 2023-09-05 15:39:28 +0530
+[35m15:39:28 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/javascripts/chart.min.js" for 127.0.0.1 at 2023-09-05 15:39:28 +0530
+[35m15:39:28 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/javascripts/base-charts.js" for 127.0.0.1 at 2023-09-05 15:39:28 +0530
+[35m15:39:28 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/javascripts/dashboard-charts.js" for 127.0.0.1 at 2023-09-05 15:39:28 +0530
+[35m15:39:28 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/javascripts/dashboard.js" for 127.0.0.1 at 2023-09-05 15:39:28 +0530
+[35m15:39:29 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/javascripts/application.js" for 127.0.0.1 at 2023-09-05 15:39:29 +0530
+[35m15:39:29 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/images/status.png" for 127.0.0.1 at 2023-09-05 15:39:29 +0530
+[35m15:39:29 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/stats" for 127.0.0.1 at 2023-09-05 15:39:29 +0530
+[35m15:39:29 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/images/apple-touch-icon.png" for 127.0.0.1 at 2023-09-05 15:39:29 +0530
+[35m15:39:29 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/images/favicon.ico" for 127.0.0.1 at 2023-09-05 15:39:29 +0530
+[35m15:39:30 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/queues" for 127.0.0.1 at 2023-09-05 15:39:30 +0530
+[35m15:39:31 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/busy" for 127.0.0.1 at 2023-09-05 15:39:31 +0530
+[35m15:39:36 web.2              | [0m[35m=> [0mStarted POST "/sidekiq/busy" for 127.0.0.1 at 2023-09-05 15:39:36 +0530
+[35m15:39:36 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/busy" for 127.0.0.1 at 2023-09-05 15:39:36 +0530
+[35m15:39:37 web.2              | [0m[35m=> [0mStarted POST "/sidekiq/busy" for 127.0.0.1 at 2023-09-05 15:39:37 +0530
+[35m15:39:37 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/busy" for 127.0.0.1 at 2023-09-05 15:39:37 +0530
+[35m15:39:38 web.2              | [0m[35m=> [0mStarted POST "/sidekiq/busy" for 127.0.0.1 at 2023-09-05 15:39:38 +0530
+[35m15:39:38 web.2              | [0m[35m=> [0mStarted GET "/sidekiq/busy" for 127.0.0.1 at 2023-09-05 15:39:38 +0530
+[36m15:39:38 worker.2           | [0m[36m=> [0m2023-09-05T10:09:38.692Z pid=51048 tid=16hg INFO: Shutting down
+[36m15:39:38 worker.2           | [0m[36m=> [0m2023-09-05T10:09:38.692Z pid=51048 tid=16hg INFO: Terminating quiet threads for default capsule
+[36m15:39:38 worker.2           | [0m[36m=> [0m2023-09-05T10:09:38.692Z pid=51048 tid=qbo INFO: Scheduler exiting...
+[36m15:39:39 worker.2           | [0m[36m=> [0m2023-09-05T10:09:39.198Z pid=51048 tid=16hg INFO: Bye!
+[35m15:39:39 web.2              | [0m[35m=> [0mStarted POST "/sidekiq/busy" for 127.0.0.1 at 2023-09-05 15:39:39 +0530
+[35m15:39:39 web.2              | [0m[35m=> [0m  
+[35m15:39:39 web.2              | [0m[35m=> [0mNoMethodError (undefined method `stop!' for nil:NilClass
+[35m15:39:39 web.2              | [0m[35m=> [0m
+[35m15:39:39 web.2              | [0m[35m=> [0m        pro.stop! if params["stop"]
+[35m15:39:39 web.2              | [0m[35m=> [0m           ^^^^^^):
+[35m15:39:39 web.2              | [0m[35m=> [0m  
+[35m15:39:39 web.2              | [0m[35m=> [0msidekiq (7.1.2) lib/sidekiq/web/application.rb:100:in `block in <class:WebApplication>'
+[35m15:39:39 web.2              | [0m[35m=> [0msidekiq (7.1.2) lib/sidekiq/web/application.rb:338:in `instance_exec'
+[35m15:39:39 web.2              | [0m[35m=> [0msidekiq (7.1.2) lib/sidekiq/web/application.rb:338:in `block in call'
+[35m15:39:39 web.2              | [0m[35m=> [0msidekiq (7.1.2) lib/sidekiq/web/application.rb:336:in `catch'
+[35m15:39:39 web.2              | [0m[35m=> [0msidekiq (7.1.2) lib/sidekiq/web/application.rb:336:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0msidekiq (7.1.2) lib/sidekiq/web/csrf_protection.rb:52:in `admit'
+[35m15:39:39 web.2              | [0m[35m=> [0msidekiq (7.1.2) lib/sidekiq/web/csrf_protection.rb:41:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/static.rb:161:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/builder.rb:244:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0msidekiq (7.1.2) lib/sidekiq/web.rb:105:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0msidekiq (7.1.2) lib/sidekiq/web.rb:110:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mwarden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+[35m15:39:39 web.2              | [0m[35m=> [0mwarden (1.2.9) lib/warden/manager.rb:34:in `catch'
+[35m15:39:39 web.2              | [0m[35m=> [0mwarden (1.2.9) lib/warden/manager.rb:34:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/conditional_get.rb:40:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/head.rb:12:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactiverecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactivesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mweb-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+[35m15:39:39 web.2              | [0m[35m=> [0mweb-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+[35m15:39:39 web.2              | [0m[35m=> [0mweb-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+[35m15:39:39 web.2              | [0m[35m=> [0mweb-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrailties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+[35m15:39:39 web.2              | [0m[35m=> [0mrailties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactivesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+[35m15:39:39 web.2              | [0m[35m=> [0mactivesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+[35m15:39:39 web.2              | [0m[35m=> [0mactivesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+[35m15:39:39 web.2              | [0m[35m=> [0mrailties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0msprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactivesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mactionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mrailties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mpuma (5.6.5) lib/puma/configuration.rb:252:in `call'
+[35m15:39:39 web.2              | [0m[35m=> [0mpuma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+[35m15:39:39 web.2              | [0m[35m=> [0mpuma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+[35m15:39:39 web.2              | [0m[35m=> [0mpuma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+[35m15:39:39 web.2              | [0m[35m=> [0mpuma (5.6.5) lib/puma/server.rb:443:in `process_client'
+[35m15:39:39 web.2              | [0m[35m=> [0mpuma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+[36m15:39:39 worker.2           | [0mProcess has stopped. Respawning...
+[36m15:39:39 worker.2           | [0mStarted with PID 51685
+[36m15:39:40 worker.2           | [0m[36m=> [0m2023-09-05T10:09:40.876Z pid=51685 tid=16zd INFO: Booted Rails 7.0.4.2 application in development environment
+[36m15:39:40 worker.2           | [0m[36m=> [0m2023-09-05T10:09:40.876Z pid=51685 tid=16zd INFO: Running in ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [arm64-darwin22]
+[36m15:39:40 worker.2           | [0m[36m=> [0m2023-09-05T10:09:40.876Z pid=51685 tid=16zd INFO: See LICENSE and the LGPL-3.0 for licensing details.
+[36m15:39:40 worker.2           | [0m[36m=> [0m2023-09-05T10:09:40.876Z pid=51685 tid=16zd INFO: Upgrade to Sidekiq Pro for more features and support: https://sidekiq.org
+[36m15:39:40 worker.2           | [0m[36m=> [0m2023-09-05T10:09:40.876Z pid=51685 tid=16zd INFO: Sidekiq 7.1.2 connecting to Redis with options {:size=>10, :pool_name=>"internal", :url=>"redis://127.0.0.1:6379/6"}
+[36m15:39:40 worker.2           | [0m[36m=> [0m2023-09-05T10:09:40.878Z pid=51685 tid=16zd INFO: Sidekiq 7.1.2 connecting to Redis with options {:size=>1, :pool_name=>"default", :url=>"redis://127.0.0.1:6379/6"}
