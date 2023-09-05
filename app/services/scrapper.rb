@@ -1,27 +1,24 @@
-require 'kimurai'
 require 'uri'
 
-class Scrapper < Kimurai::Base
-  @name   = "infinite_scroll_spider"
-  @engine = :selenium_firefox
+class Scrapper
 
-  def self.crawl!
-    @start_urls = [Current.product_url.url]
-    super
+  def crawl!
+    response = HTTParty.get(Current.product_url.url)
+    self.parse(Nokogiri::HTML(response))
   end
 
-  def parse(response, options = {})
+  def parse(response)
     configurations = Current.product_url.partner.affiliated_setting&.scrapping_configuration
     if configurations.present?
-      parsed_data = configurations.map do |item|
+      query_params = extract_query_params(Current.product_url.url.to_s)
+      parsed_data  = configurations.map do |item|
         next if item['database_field'].blank?
         parsed_html_nodes = if item['database_field'] == 'images'
                               response.xpath(item['xpath'])
                             elsif item['from_url'].present?
                               if item['url_pattern'].present?
-                                options[:url].to_s.scan(Regexp.new(item['url_pattern']))&.flatten&.join('').to_s
+                                Current.product_url.url.to_s.scan(Regexp.new(item['url_pattern']))&.flatten&.join('').to_s
                               else
-                                query_params = extract_query_params(options[:url].to_s)
                                 query_params.dig(item['query_parameter']).to_s
                               end
                             else
@@ -62,6 +59,7 @@ class Scrapper < Kimurai::Base
           ]
         end
       end.compact_blank.to_h
+      parsed_data.merge!(query_params: query_params)
       Current.product_url.update(parsed_data: parsed_data, scraping_status: parsed_data.present? ? :success : :failed, scraping_ended_on: Time.zone.now)
     else
       raise "Partner configuration is not found, Please configure !"
@@ -69,8 +67,11 @@ class Scrapper < Kimurai::Base
   end
 
   def extract_query_params(url_string)
-    uri          = URI.parse(url_string)
-    query_params = URI.decode_www_form(uri.query).to_h
-    return query_params
+    uri = URI.parse(url_string)
+    begin
+      URI.decode_www_form(uri.query).to_h
+    rescue
+      {}
+    end
   end
 end

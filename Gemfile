@@ -24,6 +24,7 @@ gem "image_processing", ">= 1.2"
 gem "tailwindcss-rails", "~> 2.0"
 gem "sidekiq", "~> 7.1"
 gem "down"
+gem "httparty"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
