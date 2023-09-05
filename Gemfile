@@ -25,6 +25,7 @@ gem "tailwindcss-rails", "~> 2.0"
 gem "sidekiq", "~> 7.1"
 gem "down"
 gem "httparty"
+gem "procodile"
 
 # Use Sass to process CSS
 # gem "sassc-rails"

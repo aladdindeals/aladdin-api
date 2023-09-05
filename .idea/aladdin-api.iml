@@ -70,6 +70,7 @@
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.6.0, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="irb (v1.6.2, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, rbenv: 3.1.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.6.3, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kimurai (v1.4.0, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.19.1, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.8.1, rbenv: 3.1.4) [gem]" level="application" />
@@ -98,6 +99,7 @@
     <orderEntry type="library" scope="PROVIDED" name="pg_ltree (v1.2.1, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pmap (v1.1.1, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="poltergeist (v1.18.1, rbenv: 3.1.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="procodile (v1.0.26, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.14.2, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry-rails (v0.3.9, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v5.0.1, rbenv: 3.1.4) [gem]" level="application" />

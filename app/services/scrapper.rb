@@ -4,7 +4,11 @@ class Scrapper
 
   def crawl!
     response = HTTParty.get(Current.product_url.url)
-    self.parse(Nokogiri::HTML(response))
+    if response.body.nil? || response.body.empty?
+      Current.product_url.update(parsed_data: {}, scraping_status: :failed, scraping_ended_on: Time.zone.now)
+    else
+      self.parse(Nokogiri::HTML(response.to_s))
+    end
   end
 
   def parse(response)

@@ -1,0 +1,385 @@
+[m15:13:50 system             | [0mProcodile supervisor started with PID 46930
+[m15:13:50 system             | [0mApplication root is /Users/krishnabalaji/rails-projects/aladdin-api
+[m15:13:50 system             | [0mReloading configuration
+[m15:13:50 control            | [0mListening at /Users/krishnabalaji/rails-projects/aladdin-api/pids/procodile.sock
+[35m15:13:50 web.1              | [0mStarted with PID 46931
+[31m15:13:50 css.1              | [0mStarted with PID 46934
+[36m15:13:50 worker.1           | [0mStarted with PID 46936
+[36m15:13:50 worker.1           | [0m[36m=> [0mNo such file ./config/sidekiq_default.yml
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:256:in `setup_options'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:29:in `parse'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/bin/sidekiq:27:in `<top (required)>'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `load'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `<top (required)>'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `load'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `kernel_load'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:23:in `run'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:491:in `exec'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:34:in `dispatch'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:28:in `start'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:45:in `block in <top (required)>'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:33:in `<top (required)>'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `load'
+[36m15:13:50 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `<main>'
+[35m15:13:51 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:13:51 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:13:51 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:13:51 web.1              | [0m[35m=> [0mPuma starting in single mode...
+[35m15:13:51 web.1              | [0m[35m=> [0m* Puma version: 5.6.5 (ruby 3.1.4-p223) ("Birdie's Version")
+[35m15:13:51 web.1              | [0m[35m=> [0m*  Min threads: 5
+[35m15:13:51 web.1              | [0m[35m=> [0m*  Max threads: 5
+[35m15:13:51 web.1              | [0m[35m=> [0m*  Environment: development
+[35m15:13:51 web.1              | [0m[35m=> [0m*          PID: 46931
+[35m15:13:51 web.1              | [0m[35m=> [0mExiting
+[35m15:13:51 web.1              | [0m[35m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 3000 (Errno::EADDRINUSE)
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `new'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `add_tcp_listener'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:335:in `block in add_tcp_listener'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `each'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `add_tcp_listener'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:173:in `block in parse'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `each'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `parse'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/runner.rb:156:in `load_and_bind'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/single.rb:44:in `run'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/launcher.rb:193:in `run'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/rack/handler/puma.rb:72:in `run'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/rack-2.2.6.2/lib/rack/server.rb:327:in `start'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:38:in `start'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:143:in `block in perform'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from <internal:kernel>:90:in `tap'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:134:in `perform'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command/base.rb:87:in `perform'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command.rb:48:in `invoke'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands.rb:18:in `<main>'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:13:51 web.1              | [0m[35m=> [0m	from bin/rails:4:in `<main>'
+[31m15:13:52 css.1              | [0m[31m=> [0m
+[31m15:13:52 css.1              | [0m[31m=> [0mRebuilding...
+[31m15:13:52 css.1              | [0m[31m=> [0m
+[31m15:13:52 css.1              | [0m[31m=> [0mDone in 317ms.
+[35m15:13:53 web.1              | [0mProcess has stopped. Respawning...
+[35m15:13:53 web.1              | [0mStarted with PID 46995
+[36m15:13:53 worker.1           | [0mProcess has stopped. Respawning...
+[36m15:13:53 worker.1           | [0mStarted with PID 46996
+[36m15:13:53 worker.1           | [0m[36m=> [0mNo such file ./config/sidekiq_default.yml
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:256:in `setup_options'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:29:in `parse'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/bin/sidekiq:27:in `<top (required)>'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `load'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `<top (required)>'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `load'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `kernel_load'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:23:in `run'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:491:in `exec'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:34:in `dispatch'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:28:in `start'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:45:in `block in <top (required)>'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:33:in `<top (required)>'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `load'
+[36m15:13:53 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `<main>'
+[35m15:13:54 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:13:54 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:13:54 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:13:54 web.1              | [0m[35m=> [0mPuma starting in single mode...
+[35m15:13:54 web.1              | [0m[35m=> [0m* Puma version: 5.6.5 (ruby 3.1.4-p223) ("Birdie's Version")
+[35m15:13:54 web.1              | [0m[35m=> [0m*  Min threads: 5
+[35m15:13:54 web.1              | [0m[35m=> [0m*  Max threads: 5
+[35m15:13:54 web.1              | [0m[35m=> [0m*  Environment: development
+[35m15:13:54 web.1              | [0m[35m=> [0m*          PID: 46995
+[35m15:13:54 web.1              | [0m[35m=> [0mExiting
+[35m15:13:54 web.1              | [0m[35m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 3000 (Errno::EADDRINUSE)
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `new'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `add_tcp_listener'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:335:in `block in add_tcp_listener'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `each'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `add_tcp_listener'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:173:in `block in parse'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `each'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `parse'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/runner.rb:156:in `load_and_bind'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/single.rb:44:in `run'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/launcher.rb:193:in `run'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/rack/handler/puma.rb:72:in `run'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/rack-2.2.6.2/lib/rack/server.rb:327:in `start'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:38:in `start'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:143:in `block in perform'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from <internal:kernel>:90:in `tap'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:134:in `perform'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command/base.rb:87:in `perform'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command.rb:48:in `invoke'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands.rb:18:in `<main>'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:13:54 web.1              | [0m[35m=> [0m	from bin/rails:4:in `<main>'
+[35m15:13:56 web.1              | [0mProcess has stopped. Respawning...
+[35m15:13:56 web.1              | [0mStarted with PID 47055
+[36m15:13:56 worker.1           | [0mProcess has stopped. Respawning...
+[36m15:13:56 worker.1           | [0mStarted with PID 47056
+[36m15:13:56 worker.1           | [0m[36m=> [0mNo such file ./config/sidekiq_default.yml
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:256:in `setup_options'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:29:in `parse'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/bin/sidekiq:27:in `<top (required)>'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `load'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `<top (required)>'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `load'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `kernel_load'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:23:in `run'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:491:in `exec'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:34:in `dispatch'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:28:in `start'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:45:in `block in <top (required)>'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:33:in `<top (required)>'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `load'
+[36m15:13:56 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `<main>'
+[35m15:13:57 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:13:57 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:13:57 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:13:57 web.1              | [0m[35m=> [0mPuma starting in single mode...
+[35m15:13:57 web.1              | [0m[35m=> [0m* Puma version: 5.6.5 (ruby 3.1.4-p223) ("Birdie's Version")
+[35m15:13:57 web.1              | [0m[35m=> [0m*  Min threads: 5
+[35m15:13:57 web.1              | [0m[35m=> [0m*  Max threads: 5
+[35m15:13:57 web.1              | [0m[35m=> [0m*  Environment: development
+[35m15:13:57 web.1              | [0m[35m=> [0m*          PID: 47055
+[35m15:13:57 web.1              | [0m[35m=> [0mExiting
+[35m15:13:57 web.1              | [0m[35m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 3000 (Errno::EADDRINUSE)
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `new'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `add_tcp_listener'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:335:in `block in add_tcp_listener'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `each'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `add_tcp_listener'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:173:in `block in parse'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `each'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `parse'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/runner.rb:156:in `load_and_bind'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/single.rb:44:in `run'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/launcher.rb:193:in `run'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/rack/handler/puma.rb:72:in `run'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/rack-2.2.6.2/lib/rack/server.rb:327:in `start'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:38:in `start'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:143:in `block in perform'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from <internal:kernel>:90:in `tap'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:134:in `perform'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command/base.rb:87:in `perform'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command.rb:48:in `invoke'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands.rb:18:in `<main>'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:13:57 web.1              | [0m[35m=> [0m	from bin/rails:4:in `<main>'
+[35m15:13:59 web.1              | [0mProcess has stopped. Respawning...
+[35m15:13:59 web.1              | [0mStarted with PID 47115
+[36m15:13:59 worker.1           | [0mProcess has stopped. Respawning...
+[36m15:13:59 worker.1           | [0mStarted with PID 47116
+[36m15:13:59 worker.1           | [0m[36m=> [0mNo such file ./config/sidekiq_default.yml
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:256:in `setup_options'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:29:in `parse'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/bin/sidekiq:27:in `<top (required)>'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `load'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `<top (required)>'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `load'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `kernel_load'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:23:in `run'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:491:in `exec'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:34:in `dispatch'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:28:in `start'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:45:in `block in <top (required)>'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:33:in `<top (required)>'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `load'
+[36m15:13:59 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `<main>'
+[35m15:14:00 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:14:00 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:14:00 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:14:00 web.1              | [0m[35m=> [0mPuma starting in single mode...
+[35m15:14:00 web.1              | [0m[35m=> [0m* Puma version: 5.6.5 (ruby 3.1.4-p223) ("Birdie's Version")
+[35m15:14:00 web.1              | [0m[35m=> [0m*  Min threads: 5
+[35m15:14:00 web.1              | [0m[35m=> [0m*  Max threads: 5
+[35m15:14:00 web.1              | [0m[35m=> [0m*  Environment: development
+[35m15:14:00 web.1              | [0m[35m=> [0m*          PID: 47115
+[35m15:14:00 web.1              | [0m[35m=> [0mExiting
+[35m15:14:00 web.1              | [0m[35m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 3000 (Errno::EADDRINUSE)
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `new'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `add_tcp_listener'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:335:in `block in add_tcp_listener'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `each'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `add_tcp_listener'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:173:in `block in parse'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `each'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `parse'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/runner.rb:156:in `load_and_bind'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/single.rb:44:in `run'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/launcher.rb:193:in `run'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/rack/handler/puma.rb:72:in `run'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/rack-2.2.6.2/lib/rack/server.rb:327:in `start'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:38:in `start'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:143:in `block in perform'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from <internal:kernel>:90:in `tap'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:134:in `perform'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command/base.rb:87:in `perform'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command.rb:48:in `invoke'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands.rb:18:in `<main>'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:14:00 web.1              | [0m[35m=> [0m	from bin/rails:4:in `<main>'
+[35m15:14:02 web.1              | [0mProcess has stopped. Respawning...
+[35m15:14:02 web.1              | [0mStarted with PID 47149
+[36m15:14:02 worker.1           | [0mProcess has stopped. Respawning...
+[36m15:14:02 worker.1           | [0mStarted with PID 47150
+[36m15:14:03 worker.1           | [0m[36m=> [0mNo such file ./config/sidekiq_default.yml
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:256:in `setup_options'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:29:in `parse'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/bin/sidekiq:27:in `<top (required)>'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `load'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `<top (required)>'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `load'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `kernel_load'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:23:in `run'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:491:in `exec'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:34:in `dispatch'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:28:in `start'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:45:in `block in <top (required)>'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:33:in `<top (required)>'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `load'
+[36m15:14:03 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `<main>'
+[35m15:14:03 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:14:03 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:14:03 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:14:03 web.1              | [0m[35m=> [0mPuma starting in single mode...
+[35m15:14:03 web.1              | [0m[35m=> [0m* Puma version: 5.6.5 (ruby 3.1.4-p223) ("Birdie's Version")
+[35m15:14:03 web.1              | [0m[35m=> [0m*  Min threads: 5
+[35m15:14:03 web.1              | [0m[35m=> [0m*  Max threads: 5
+[35m15:14:03 web.1              | [0m[35m=> [0m*  Environment: development
+[35m15:14:03 web.1              | [0m[35m=> [0m*          PID: 47149
+[35m15:14:04 web.1              | [0m[35m=> [0mExiting
+[35m15:14:04 web.1              | [0m[35m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 3000 (Errno::EADDRINUSE)
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `new'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `add_tcp_listener'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:335:in `block in add_tcp_listener'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `each'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `add_tcp_listener'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:173:in `block in parse'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `each'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `parse'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/runner.rb:156:in `load_and_bind'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/single.rb:44:in `run'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/launcher.rb:193:in `run'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/rack/handler/puma.rb:72:in `run'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/rack-2.2.6.2/lib/rack/server.rb:327:in `start'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:38:in `start'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:143:in `block in perform'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from <internal:kernel>:90:in `tap'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:134:in `perform'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command/base.rb:87:in `perform'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command.rb:48:in `invoke'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands.rb:18:in `<main>'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:14:04 web.1              | [0m[35m=> [0m	from bin/rails:4:in `<main>'
+[35m15:14:05 web.1              | [0mProcess has stopped. Respawning...
+[35m15:14:05 web.1              | [0mStarted with PID 47182
+[36m15:14:05 worker.1           | [0mProcess has stopped. Respawning...
+[36m15:14:05 worker.1           | [0mStarted with PID 47183
+[36m15:14:05 worker.1           | [0m[36m=> [0mNo such file ./config/sidekiq_default.yml
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:256:in `setup_options'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/lib/sidekiq/cli.rb:29:in `parse'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/sidekiq-7.1.2/bin/sidekiq:27:in `<top (required)>'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `load'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/sidekiq:25:in `<top (required)>'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `load'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:58:in `kernel_load'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli/exec.rb:23:in `run'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:491:in `exec'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:34:in `dispatch'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/cli.rb:28:in `start'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:45:in `block in <top (required)>'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bundler-2.4.1/exe/bundle:33:in `<top (required)>'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `load'
+[36m15:14:05 worker.1           | [0m[36m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/bin/bundle:25:in `<main>'
+[35m15:14:06 web.1              | [0m[35m=> [0m=> Booting Puma
+[35m15:14:06 web.1              | [0m[35m=> [0m=> Rails 7.0.4.2 application starting in development 
+[35m15:14:06 web.1              | [0m[35m=> [0m=> Run `bin/rails server --help` for more startup options
+[35m15:14:06 web.1              | [0m[35m=> [0mPuma starting in single mode...
+[35m15:14:06 web.1              | [0m[35m=> [0m* Puma version: 5.6.5 (ruby 3.1.4-p223) ("Birdie's Version")
+[35m15:14:06 web.1              | [0m[35m=> [0m*  Min threads: 5
+[35m15:14:06 web.1              | [0m[35m=> [0m*  Max threads: 5
+[35m15:14:06 web.1              | [0m[35m=> [0m*  Environment: development
+[35m15:14:06 web.1              | [0m[35m=> [0m*          PID: 47182
+[35m15:14:06 web.1              | [0m[35m=> [0mExiting
+[35m15:14:06 web.1              | [0m[35m=> [0m/Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `initialize': Address already in use - bind(2) for "127.0.0.1" port 3000 (Errno::EADDRINUSE)
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `new'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:341:in `add_tcp_listener'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:335:in `block in add_tcp_listener'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `each'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:334:in `add_tcp_listener'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:173:in `block in parse'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `each'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/binder.rb:156:in `parse'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/runner.rb:156:in `load_and_bind'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/single.rb:44:in `run'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/launcher.rb:193:in `run'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/rack/handler/puma.rb:72:in `run'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/rack-2.2.6.2/lib/rack/server.rb:327:in `start'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:38:in `start'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:143:in `block in perform'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from <internal:kernel>:90:in `tap'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands/server/server_command.rb:134:in `perform'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command/base.rb:87:in `perform'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/command.rb:48:in `invoke'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/commands.rb:18:in `<main>'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from /Users/krishnabalaji/.rbenv/versions/3.1.4/lib/ruby/gems/3.1.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+[35m15:14:06 web.1              | [0m[35m=> [0m	from bin/rails:4:in `<main>'
+[35m15:14:08 web.1              | [0m[41;37mWarning:[0m[31m this process has been respawned 5 times and keeps dying.[0m
+[35m15:14:08 web.1              | [0m[31mIt will not be respawned automatically any longer and will no longer be managed.[0m
+[35m15:14:08 web.1              | [0mRemoved PID file
+[36m15:14:08 worker.1           | [0m[41;37mWarning:[0m[31m this process has been respawned 5 times and keeps dying.[0m
+[36m15:14:08 worker.1           | [0m[31mIt will not be respawned automatically any longer and will no longer be managed.[0m
+[36m15:14:08 worker.1           | [0mRemoved PID file
