@@ -6,6 +6,6 @@ class FetchProductUrlJob < ApplicationJob
     return if product_url.blank?
     Current.product_url = product_url
     Current.product_url.update(scraping_status: :processing, scraping_started_on: Time.zone.now)
-    Scrapper.new.crawl!
+    Scrapper.crawl!
   end
 end

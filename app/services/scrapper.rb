@@ -1,28 +1,26 @@
 require 'uri'
 
-class Scrapper
+class Scrapper < Kimurai::Base
+  @name   = "infinite_scroll_spider"
+  @engine = :selenium_firefox
 
-  def crawl!
-    response = HTTParty.get(Current.product_url.url)
-    if response.body.nil? || response.body.empty?
-      Current.product_url.update(parsed_data: {}, scraping_status: :failed, scraping_ended_on: Time.zone.now)
-    else
-      self.parse(Nokogiri::HTML(response.to_s))
-    end
+  def self.crawl!
+    @start_urls = [Current.product_url.url]
+    super
   end
 
-  def parse(response)
+  def parse(response, options = {})
     configurations = Current.product_url.partner.affiliated_setting&.scrapping_configuration
     if configurations.present?
-      query_params = extract_query_params(Current.product_url.url.to_s)
-      parsed_data  = configurations.map do |item|
+      parsed_data = configurations.map do |item|
         next if item['database_field'].blank?
         parsed_html_nodes = if item['database_field'] == 'images'
                               response.xpath(item['xpath'])
                             elsif item['from_url'].present?
                               if item['url_pattern'].present?
-                                Current.product_url.url.to_s.scan(Regexp.new(item['url_pattern']))&.flatten&.join('').to_s
+                                options[:url].to_s.scan(Regexp.new(item['url_pattern']))&.flatten&.join('').to_s
                               else
+                                query_params = extract_query_params(options[:url].to_s)
                                 query_params.dig(item['query_parameter']).to_s
                               end
                             else
