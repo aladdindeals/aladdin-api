@@ -41,6 +41,9 @@ end
 
 group :development do
   gem "web-console"
+  gem "capistrano"
+  gem "capistrano-rails"
+  gem 'capistrano-rbenv'
 end
 
 group :test do
