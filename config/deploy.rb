@@ -34,7 +34,7 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", " vendor/bun
 
 # Default value for keep_releases is 5
 set :keep_releases, 3
-
+set :connection_timeout, 5
 # Skip migration if files in db/migrate were not modified
 # Defaults to false
 set :conditionally_migrate, true
