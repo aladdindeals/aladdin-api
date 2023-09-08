@@ -2,14 +2,18 @@ require 'uri'
 
 class Scrapper < Kimurai::Base
   @name   = "infinite_scroll_spider"
-  @engine = :selenium_chrome
+  @engine = :selenium_firefox
+  @config = {
+    user_agent:     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36",
+    before_request: { delay: 4..7 }
+  }
 
   def self.crawl!
     @start_urls = [Current.product_url.url]
     super
   end
 
-  def parse(response, options = {})
+  def parse(response,  options= {})
     configurations = Current.product_url.partner.affiliated_setting&.scrapping_configuration
     if configurations.present?
       parsed_data = configurations.map do |item|
@@ -61,7 +65,7 @@ class Scrapper < Kimurai::Base
           ]
         end
       end.compact_blank.to_h
-      parsed_data.merge!(query_params: query_params)
+      parsed_data.merge!(query_params: extract_query_params(options[:url].to_s))
       Current.product_url.update(parsed_data: parsed_data, scraping_status: parsed_data.present? ? :success : :failed, scraping_ended_on: Time.zone.now)
     else
       raise "Partner configuration is not found, Please configure !"

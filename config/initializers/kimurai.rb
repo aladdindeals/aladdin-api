@@ -15,5 +15,7 @@ Kimurai.configure do |config|
 
   # Provide custom chrome binary path (default is any available chrome/chromium in the PATH):
   config.selenium_chrome_path = "/usr/bin/chromium-browser"
-  config.chromedriver_path = "~/.local/bin/chromedriver"
+  config.chromedriver_path    = "/usr/bin/chromedriver"
+  config.selenium_firefox_path = "/usr/bin/firefox"
+  config.geckodriver_path    = "/usr/bin/firefox.geckodriver"
 end
