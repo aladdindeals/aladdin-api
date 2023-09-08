@@ -1,6 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.3"
 
+set :stages, %w(staging production)
+set :default_stage, "production"
 set :application, "aladdin-api"
 set :repo_url, "git@github.com:aladdindeals/aladdin-api.git"
 
@@ -9,6 +11,10 @@ set :repo_url, "git@github.com:aladdindeals/aladdin-api.git"
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
+set :deploy_to, '/root/api/'
+set :log_level, :debug
+set :rbenv_type, :user
+set :rbenv_ruby, '3.1.4'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -21,7 +27,7 @@ set :repo_url, "git@github.com:aladdindeals/aladdin-api.git"
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, %w[config/database.yml config/master.key]
+set :linked_files, %w{config/database.yml config/master.key config/secrets.yml config/redis.yml }
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", " vendor/bundle", ".bundle", "public/system", "public/uploads", "node_modules"
