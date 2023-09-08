@@ -2,7 +2,7 @@ require 'uri'
 
 class Scrapper < Kimurai::Base
   @name   = "infinite_scroll_spider"
-  @engine = :selenium_firefox
+  @engine = :selenium_chrome
 
   def self.crawl!
     @start_urls = [Current.product_url.url]
