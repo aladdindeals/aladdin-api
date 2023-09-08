@@ -43,7 +43,6 @@ set :conditionally_migrate, true
 # set :ssh_options, verify_host_key: :secure
 before 'deploy:starting', 'config_files:upload'
 set :initial, true
-before 'deploy:migrate', 'database:create' if fetch(:initial)
 after 'deploy:publishing', 'application:reload'
 after 'deploy:starting', 'sidekiq:quiet'
 after 'deploy:reverted', 'sidekiq:restart'
