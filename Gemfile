@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem "rails", "~> 7.0.4", ">= 7.0.4.2"
+gem "rails", "~> 7.0.4"
 gem "sprockets-rails"
 gem 'pg', '~> 1.5'
 gem "puma", "~> 5.0"
@@ -26,6 +26,8 @@ gem "sidekiq", "~> 7.1"
 gem "down"
 gem "httparty"
 gem "procodile"
+gem 'selenium-webdriver', '~> 4.0.3'
+gem "webdrivers"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -41,19 +43,12 @@ end
 
 group :development do
   gem "web-console"
-  gem "capistrano"
-  gem "capistrano-rails"
-  gem 'capistrano-rbenv'
-  gem 'capistrano-sidekiq'
-  gem 'capistrano-passenger'
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-ruby "3.1.4"
+ruby "2.7.6"

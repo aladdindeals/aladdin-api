@@ -4,7 +4,6 @@ class Scrapper < Kimurai::Base
   @name   = "infinite_scroll_spider"
   @engine = :selenium_firefox
   @config = {
-    user_agent:     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36",
     before_request: { delay: 4..7 }
   }
 
@@ -13,7 +12,7 @@ class Scrapper < Kimurai::Base
     super
   end
 
-  def parse(response,  options= {})
+  def parse(response, options = {})
     configurations = Current.product_url.partner.affiliated_setting&.scrapping_configuration
     if configurations.present?
       parsed_data = configurations.map do |item|
