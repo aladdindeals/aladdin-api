@@ -26,7 +26,7 @@ gem "sidekiq", "~> 7.1"
 gem "down"
 gem "httparty"
 gem "procodile"
-gem 'selenium-webdriver', '~> 4.0.3'
+gem 'selenium-webdriver', '~> 4.10.0'
 gem "webdrivers"
 
 # Use Sass to process CSS
@@ -51,4 +51,4 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-ruby "2.7.6"
+ruby "3.1.4"
