@@ -27,7 +27,7 @@ class ProductUrl::Product
         )
       end
     end
-    attach_images!y
+    attach_images!
   end
 
   private
