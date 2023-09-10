@@ -8,15 +8,14 @@ class ProductUrl::Product
   def create_product!
     ApplicationRecord.transaction do
       find_or_create_category!
-      source_data = product_url.source_data
-      product     = product_url.partner.products.find_or_create_by(pid: source_data['pid'], name: source_data['name'])
-      if product.errors.none?
+      source_data = product_url.parsed_data
+      @product    = product_url.partner.products.find_or_create_by(pid: source_data['pid'], name: source_data['name'], description: source_data['description'].to_s)
+      if @product.errors.none?
         meta_headers               = {}
         meta_headers[:title]       = source_data.dig('meta_title') if source_data.dig('meta_title').present?
         meta_headers[:description] = source_data.dig('meta_description') if source_data.dig('meta_description').present?
         meta_headers[:keywords]    = source_data.dig('meta_keywords') if source_data.dig('meta_keywords').present?
-        product.update(
-          description:          source_data['description'],
+        @product.update(
           total_ratings:        source_data['total_ratings'].to_i,
           total_reviews:        source_data['total_reviews'].to_i,
           avg_rating:           source_data['avg_rating'].to_f,
@@ -26,20 +25,22 @@ class ProductUrl::Product
           meta_headers:         meta_headers,
           category_id:          @category&.id
         )
-
-        if product_url.images.attached?
-          product_url.images.each do |product_image|
-            next if product_image.bob.blank?
-            product.images.attach(product_image.bob)
-          end
-        end
       end
     end
+    attach_images!y
   end
 
   private
 
   def find_or_create_category!
+    @category = nil
+  end
 
+  def attach_images!
+    return unless product_url.product_images.attached?
+    product_url.product_images.each do |product_image|
+      next if product_image.blob.blank?
+      @product.images.attach(product_image.blob)
+    end
   end
 end
