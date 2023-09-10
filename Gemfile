@@ -28,6 +28,7 @@ gem "httparty"
 gem "procodile"
 gem 'selenium-webdriver', '~> 4.10.0'
 gem "webdrivers"
+gem "typhoeus"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
