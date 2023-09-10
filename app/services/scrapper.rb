@@ -4,7 +4,11 @@ class Scrapper < Kimurai::Base
   @name   = "infinite_scroll_spider"
   @engine = :selenium_firefox
   @config = {
-    before_request: { delay: 4..7 }
+    before_request:      { delay: 4..7 },
+    headless_mode:       :native,
+    skip_request_errors: [{ error: RuntimeError, message: "404 => Net::HTTPNotFound" }],
+    retry_request_errors: [Net::ReadTimeout],
+
   }
 
   def self.crawl!
