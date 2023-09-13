@@ -140,6 +140,7 @@
     <orderEntry type="library" scope="PROVIDED" name="unf (v0.1.4, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unf_ext (v0.0.8.2, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.9, rbenv: 3.1.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="watir (v7.3.0, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.2.0, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webdrivers (v5.3.1, rbenv: 3.1.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webrick (v1.8.1, rbenv: 3.1.4) [gem]" level="application" />
