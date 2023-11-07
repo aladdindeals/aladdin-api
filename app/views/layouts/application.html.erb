@@ -23,9 +23,9 @@
 <%= turbo_frame_tag "flash_message" do %>
 <% end %>
 
-<main class="<%= yield(:main_class) || 'container mx-auto mt-28 px-5 flex' %>">
 
-  <% if current_user.present? %>
+<% if current_user.present? %>
+  <main class="<%= yield(:main_class) || 'container mx-auto mt-28 px-5 flex' %>">
     <div class="px-5 mx-auto" style="display: flex; justify-content: space-between;">
       <div><%= current_user.name %></div>
       <div>
@@ -34,9 +34,16 @@
         <% end %>
       </div>
     </div>
-  <% end %>
 
+    <%= yield %>
+  </main>
+<% end %>
+
+<% unless current_user.present? %>
+  <%= render 'shared/navbar' %>
   <%= yield %>
-</main>
+  <%= render 'shared/footer' %>
+<% end %>
+
 </body>
 </html>

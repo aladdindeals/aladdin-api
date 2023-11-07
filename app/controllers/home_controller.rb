@@ -15,7 +15,7 @@ class HomeController < ApplicationController
 
   def set_product_url
     @product_url = ProductUrl.find_by(id: params[:id])
-    return if @procut_url.present?
+    return if @product_url.present?
     flash[:error] = 'Product is not found'
     redirect_back(fallback_location: root_path)
   end

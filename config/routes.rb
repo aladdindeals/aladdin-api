@@ -16,4 +16,5 @@ Rails.application.routes.draw do
     root 'product_urls#index', as: :user_root
   end
   root 'home#index'
+  resources :home, only: [:show]
 end
