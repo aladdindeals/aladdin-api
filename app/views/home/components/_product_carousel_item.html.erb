@@ -1,0 +1,25 @@
+<div class="mx-auto h-full min-w-[300px] px-4 xs:min-w-[368px] sm:min-w-[510px] md:min-w-[340px] lg:min-w-[312px] xl:min-w-[282px] 2xl:min-w-[325px]" title="<%= product.parsed_data['name'] %>">
+  <div class="mb-10 overflow-hidden rounded-lg bg-white shadow-card">
+    <div class="relative">
+      <% if product.product_images.attached? && product.product_images.first.present? %>
+        <%= image_tag(rails_blob_url(product.product_images.first), alt: "product", class: "w-full", style: 'height: 200px;width: 70%;position: relative;left: 10%;') %>
+      <% end %>
+      <span class="absolute left-5 top-5 inline-flex items-center justify-center rounded bg-red-600 px-3 py-1 text-sm font-semibold text-white">Hot</span>
+    </div>
+    <div class="px-5 pt-6 pb-8 text-center">
+      <h3>
+        <!--        Product link-->
+        <%= link_to root_path, class: 'text-lg font-semibold text-black hover:text-primary xs:text-xl' do %>
+          <%= product.parsed_data['name'].to_s.truncate(30) %>
+        <% end %>
+      </h3>
+      <p class="text-lg font-semibold text-black">Price: <%= comma_style(product.parsed_data['price'].to_f, precision: 0) %></p>
+      <p class="text-lg font-semibold text-black">Rating: <%= product.parsed_data['avg_rating'] %></p>
+      <div class="text-center">
+        <button class="inline-flex items-center justify-center rounded-md bg-primary py-3 px-8 text-center text-base font-semibold text-white hover:bg-black">
+          View Product
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,5 @@
-class ProductUrlsController < ApplicationController
+class Admin::ProductUrlsController < ApplicationController
+  include Authentication
   before_action :set_product_url, only: [:show]
 
   def index

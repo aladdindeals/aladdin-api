@@ -1,4 +1,5 @@
-class SignInsController < ApplicationController
+class Admin::SignInsController < ApplicationController
+  include Authentication
 
   # include Devise::Controllers::Rememberable
 

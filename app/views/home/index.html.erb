@@ -1,0 +1,82 @@
+<header x-data="
+        {
+          navbarOpen: false,
+          searchForm: false,
+          wishlistOpen: false,
+          cartOpen: false,
+          submenuOpen: false,
+          categories: false,
+          categoryOne: true,
+        }
+      " class="w-full bg-white">
+  <div class="hidden border-b border-[#e7e7e7] sm:block">
+    <div class="container mx-auto">
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4 md:w-2/3 lg:w-1/2">
+          <ul class="-mx-3 flex items-center">
+            <li>
+              <a href="javascript:void(0)" class="inline-block py-4 px-3 text-sm font-medium text-body-color hover:text-primary">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="inline-block py-4 px-3 text-sm font-medium text-body-color hover:text-primary">
+                Order Tracking
+              </a>
+            </li>
+            <li>
+              <a href="support.html" class="inline-block py-4 px-3 text-sm font-medium text-body-color hover:text-primary">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="inline-block py-4 px-3 text-sm font-medium text-body-color hover:text-primary">
+                FAQs
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-b border-[#e7e7e7]">
+    <div class="container mx-auto">
+      <div class="relative -mx-4 flex items-center justify-center sm:justify-between">
+        <div class="w-60 max-w-full px-4 lg:w-48">
+          <%= link_to root_path, class: 'block w-full py-5 lg:py-3' do %>
+            <%= image_tag('aladdin-logo', alt: 'logo', style: 'height: 35px;width: 35px;') %>
+          <% end %>
+        </div>
+        <div class="flex w-full items-center justify-end px-4 lg:justify-between">
+          <div class="flex w-full items-center justify-between px-4">
+            <div class="w-full">
+              <button @click="navbarOpen = !navbarOpen" :class="navbarOpen &amp;&amp; 'navbarTogglerActive' " id="navbarToggler" class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+                <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+                <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+                <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+              </button>
+              <nav :class="!navbarOpen &amp;&amp; 'hidden' " id="navbarCollapse" class="absolute right-4 top-full w-full max-w-[250px] justify-center rounded-lg bg-white py-5 px-6 shadow lg:static lg:flex lg:w-full lg:max-w-full lg:justify-end lg:bg-transparent lg:py-0 lg:px-0 lg:shadow-none hidden">
+                <ul class="blcok items-center lg:flex">
+                  <% top_nav_header_links.each do |link| %>
+                    <li>
+                      <%= link_to link[:path], class: link[:class] do %>
+                        <%= link[:name] %>
+                      <% end %>
+                    </li>
+                  <% end %>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="hidden w-full items-center justify-end space-x-4 pr-[70px] sm:flex lg:pr-0">
+            <%= render 'user_profile' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<%= render 'main_container' %>
+<%= render 'product_carousel' %>
+<%= render 'categories' %>
+<%= render 'footer' %>

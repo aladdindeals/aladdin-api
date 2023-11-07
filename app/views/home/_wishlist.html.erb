@@ -1,0 +1,103 @@
+<div class="relative z-20">
+  <div class="flex max-w-[200px] justify-end">
+    <button @click="cartOpen = !cartOpen" class="relative flex h-10 w-10 items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] text-dark">
+      <svg width="20" height="20" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.2783 8.00273H22.0596L19.2971 0.974601C19.1346 0.608976 18.7283 0.446476 18.3627 0.568351C17.9971 0.730851 17.8346 1.1371 17.9564 1.50273L20.5158 8.04335H5.44395L8.00332 1.50273C8.16582 1.1371 7.9627 0.730851 7.59707 0.568351C7.23145 0.405851 6.8252 0.608976 6.6627 0.974601L3.9002 8.00273H2.68145C2.07207 8.00273 1.54395 8.49023 1.54395 9.14023V12.5934C1.54395 13.2027 2.03145 13.7309 2.68145 13.7309H2.72207L3.77832 22.9934C3.94082 24.4152 5.15957 25.5121 6.62207 25.5121H19.2971C20.7596 25.5121 21.9783 24.4152 22.1408 22.9934L23.1971 13.7309H23.2377C23.8471 13.7309 24.3752 13.2434 24.3752 12.5934V9.14023C24.4158 8.53085 23.9283 8.00273 23.2783 8.00273ZM3.00645 9.4246H22.9939V12.2684H3.00645V9.4246ZM20.7596 22.7902C20.6783 23.5215 20.0689 24.0496 19.3377 24.0496H6.6627C5.93145 24.0496 5.32207 23.5215 5.24082 22.7902L4.18457 13.6902H21.8158L20.7596 22.7902Z" fill="#212B36"></path>
+        <path d="M8.73467 20.6375C9.14092 20.6375 9.46592 20.3125 9.46592 19.9062V16.7781C9.46592 16.3719 9.14092 16.0469 8.73467 16.0469C8.32842 16.0469 8.00342 16.3719 8.00342 16.7781V19.9062C8.00342 20.3125 8.32842 20.6375 8.73467 20.6375Z" fill="#212B36"></path>
+        <path d="M17.2659 20.6375C17.6722 20.6375 17.9972 20.3125 17.9972 19.9062V16.7781C17.9972 16.3719 17.6722 16.0469 17.2659 16.0469C16.8597 16.0469 16.5347 16.3719 16.5347 16.7781V19.9062C16.5753 20.3125 16.9003 20.6375 17.2659 20.6375Z" fill="#212B36"></path>
+      </svg>
+
+      <span class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-primary text-[10px] font-semibold text-white">
+                    1
+                  </span>
+    </button>
+  </div>
+  <div x-show="cartOpen" @click.outside="cartOpen = false" class="absolute top-full right-0 mt-5 w-[330px]" style="display: none;">
+    <div class="overflow-hidden rounded-lg bg-white p-8 shadow-card">
+      <div class="mb-5 border-b border-[#e7e7e7] pb-3">
+        <div class="-mx-1 flex items-center justify-between pb-4">
+          <div class="flex items-center px-1">
+            <div class="mr-3 h-10 w-full max-w-[40px] overflow-hidden rounded">
+              <img src="src/assets/ecom-images/checkout/checkout-02/image-02.jpg" alt="product image" class="w-full">
+            </div>
+            <div>
+              <a href="javascript:void(0)" class="text-sm font-medium text-black hover:text-primary">
+                Circular Sienna
+              </a>
+              <p class="truncate text-xs font-medium text-body-color">
+                Awesome white shirt
+              </p>
+            </div>
+          </div>
+          <div class="px-1">
+            <p class="text-base font-semibold text-black">$36.00</p>
+          </div>
+        </div>
+        <div class="-mx-1 flex items-center justify-between py-4">
+          <div class="flex items-center px-1">
+            <div class="mr-3 h-10 w-full max-w-[40px] overflow-hidden rounded">
+              <img src="src/assets/ecom-images/checkout/checkout-02/image-03.jpg" alt="product image" class="w-full">
+            </div>
+            <div>
+              <a href="javascript:void(0)" class="text-sm font-medium text-black hover:text-primary">
+                Black T-shirt
+              </a>
+              <p class="truncate text-xs font-medium text-body-color">
+                It's a nice black t-shirt
+              </p>
+            </div>
+          </div>
+          <div class="px-1">
+            <p class="text-base font-semibold text-black">$36.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="-mx-1 border-b border-[#e7e7e7] pb-5">
+        <div class="mb-3 flex items-center justify-between">
+          <div class="px-1">
+            <p class="text-base font-medium text-black">Subtotal</p>
+          </div>
+          <div class="px-1">
+            <p class="text-base font-semibold text-black">$108</p>
+          </div>
+        </div>
+        <div class="mb-3 flex items-center justify-between">
+          <div class="px-1">
+            <p class="text-base font-medium text-black">
+              Shipping Cost (+)
+            </p>
+          </div>
+          <div class="px-1">
+            <p class="text-base font-semibold text-black">$10.85</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="px-1">
+            <p class="text-base font-medium text-black">
+              Discount (-)
+            </p>
+          </div>
+          <div class="px-1">
+            <p class="text-base font-semibold text-black">$9.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="-mx-1 flex items-center justify-between pt-5 pb-6">
+        <div class="px-1">
+          <p class="text-base font-medium text-black">
+            Total Payable
+          </p>
+        </div>
+        <div class="px-1">
+          <p class="text-base font-semibold text-black">$88.15</p>
+        </div>
+      </div>
+
+      <div>
+        <a href="shopping-cart.html" class="flex w-full items-center justify-center rounded-md bg-primary py-[10px] px-10 text-center text-base font-normal text-white hover:bg-opacity-90">
+          Place Order
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

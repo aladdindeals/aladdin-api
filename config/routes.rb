@@ -6,11 +6,14 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   mount Sidekiq::Web => '/sidekiq'
-  resources :product_urls, except: [:index]
-  resource :sign_ins, only: [:create, :destroy]
+  namespace :admin do
+    get '/sign_in', to: "sign_ins#new", as: :admin_sign_in
+    resource :sign_ins, only: [:create, :destroy]
+    resources :product_urls, except: [:index]
+  end
+
   authenticated :user do
     root 'product_urls#index', as: :user_root
   end
-
-  root "sign_ins#new"
+  root 'home#index'
 end
