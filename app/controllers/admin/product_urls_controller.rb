@@ -32,6 +32,6 @@ class Admin::ProductUrlsController < ApplicationController
     @product_url = ProductUrl.find_by(id: params[:id])
     return if @product_url.present?
     flash[:error] = "Requested product URL not found."
-    redirect_to product_urls_path
+    redirect_to admin_product_urls_path
   end
 end
